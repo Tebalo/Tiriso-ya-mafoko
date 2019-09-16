@@ -1,0 +1,162 @@
+#:kivy 1.0
+#:kivy 1.0
+<Test>:
+    b1: btn1
+    b2: btn2
+    b3: btn3
+    b4: btn4
+    b5: btn5
+    b6: score
+
+    d1: one
+    d2: two
+    d3: three
+    d4: four
+    d5: five
+    FloatLayout:
+        Widget:           
+	        canvas.before:
+	            Color:
+	                rgba: 1, 1, 1, 1
+	            Rectangle:
+	                # self here refers to the widget i.e. BoxLayout
+	                pos: self.pos
+	                size: self.size
+        Button:
+            id: btn1
+            value: '1'
+            text: root.que1
+            pos: 350, 50
+            size_hint: .2, .1
+            background_color: .5, 1, 1, 1
+            on_press: root.do_action(self)
+        Button:
+            id: btn2
+            value: '2'
+            text: root.que2
+            pos: 350, 150
+            size_hint: .2, .1
+            background_color: .5, 1, 1, 1
+            on_press: root.do_action(self)
+        Button:
+            id: btn3
+            value: '3'
+            text: root.que3
+            pos: 350, 250
+            size_hint: .2, .1
+            background_color: .5, 1, 1, 1
+            on_press: root.do_action(self)
+        Button:
+            id: btn4
+            value: '4'
+            text: root.que4
+            pos: 350, 350
+            size_hint: .2, .1
+            background_color: .5, 1, 1, 1
+            on_press: root.do_action(self)
+        Button:
+            id: btn5
+            value: '5'
+            text: root.que5
+            pos: 350, 450
+            size_hint: .2, .1
+            background_color: .5, 1, 1, 1
+            on_press: root.do_action(self)
+	    Button:
+            id: score
+            value: '6'
+            pos: 550, 150
+            text: root.que6
+            size_hint: .2, .27   
+        Button:
+            id: timer
+            pos: 550, 50
+            size_hint: .2, .1
+            background_color: 1,.5,.5,1
+            text: str(round(root.a))
+
+        Button:
+            id: one
+            pos: 100, 50
+            size_hint: .3, .1
+            text: root.ans1
+            ans: root.que1
+            background_color: 0, 2, 0, 2
+        Button:
+            id: two
+            pos: 100, 150
+            size_hint: .3, .1
+            text: root.ans2
+            ans: root.que2
+            background_color: 0, 2, 0, 2
+        Button:
+            id: three
+            pos: 100, 250
+            size_hint: .3, .1
+            text: root.ans3
+            ans: root.que3
+            background_color: 0, 2, 0, 2
+        Button:
+            id: four
+            pos: 100, 350
+            size_hint: .3, .1
+            text: root.ans4
+            ans: root.que4
+            background_color: 0, 2, 0, 2
+        Button:
+            id: five
+            pos: 100, 450
+            size_hint: .3, .1
+            text: root.ans5 
+            ans: root.que5
+            background_color: 0, 2, 0, 2
+        Button:
+            id: six
+            pos: 550, 470
+            size_hint: .2, .05
+            text: 'Submit'
+            background_color: 0, 2, 1, 1 
+            on_press: root.submit()
+        Button:
+            id: retry
+            pos: 550, 370
+            size_hint: .2, .05
+            text: 'Try again' 
+            background_color: 1, .5, .5, 1
+            on_press: app.stop(), app.run()
+        Label:
+            id: cc
+            pos: 210, 535
+            size_hint: .4, .1
+            color: 1,0,1,1
+            underline: True
+            italic: True
+            text: 'Tiriso Ya Mafoko' 
+            font_size: 50
+            bold: True
+        Label:
+            id: ee
+            pos: 300, 500
+            size_hint: .2, .1
+            color: 1,0,0,.5
+            italic: True
+            text: 'Lebaganya mafoko a latelang go ya ka tiriso a one.' 
+            font_size: 18
+            bold: True
+<Popups>: 
+    Label: 
+        id: sc1
+        text: 'Score: 5'
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1} 
+
+    Button: 
+        text: "Try Again"
+        size_hint: 1, 0.4 
+        pos_hint: {"x":0, "y":0.1}
+        on_press: app.stop(), app.run()
+         
+
+
+  
+
