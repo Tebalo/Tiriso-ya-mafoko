@@ -1,0 +1,59 @@
+letlhaodi: {<CC1><ADJ1>}
+               {<CC4><ADJ1>}
+               {<CC3><ADJ2>}
+               {<C12><ADJ8>}
+               {<CC7><ADJ5>}
+               {<CC5><ADJ>}
+               {<C11><ADJ7>}
+               {<CC9><NUM>}
+               {<CC6><ADJ4>}
+               {<CC8><ADJ6>}
+               {<CC7><ADJ5>}
+               {<C15><ADJ9>}
+               {<CC9><ADJ9>}
+               {<CC9><C10><ADJ>}
+letlhalosi_felo:  {<L24><EE1><L31><PRON>}
+                {<L25><EE1><L31><PRON>}
+                {<C14><EE1><L31><PRON>}
+                {<C15><letlhaodi>}
+
+letlhalosi_felo:  {<L01><L24><NN>}
+                {<L01><L25><EE1>}
+                {<L01><L24><NN>}
+
+letlhalosi_felo:  {<EE1>}
+                {<L25><NN>}
+                {<L24><NN>}
+                {<C14><NN>}
+                {<C15><PRON>}
+                {<C15><NN>}
+                {<C15><LS1>}
+                {<C15><NN>}
+                {<L31><NN>}
+                {<L24><NN>}
+
+lesoboki: {<JJQ>} 
+leemedi: {<PRON>}
+lesupi: {<LS0>}
+
+lebadi : {<ENM>}
+            {<NUM><CC6><NUM>}
+            {<ENM><CC6|L33><ENM>}
+            {<CC9><PRON>}
+            {<CC4|CC3|CC5|CC6|L33|CC7|CC8|C10|C11|C13|C15><LS1>}
+
+lerui : {<L31><L35>}
+          {<L31><L34>}
+          {<L31><L30>}
+
+lerui:  {<L31><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L22><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L31><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L12><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L29><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<CC7><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L02><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L32><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L27><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<L31><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
+          {<CC3><NN|letlhaodi|lerui|JJQ|PRON|lebadi|lesupi>}
